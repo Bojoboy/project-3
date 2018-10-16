@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("../../fonts/Roboto-Bold.woff2") format("woff2"), url("../../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../../fonts/Roboto-Regular.woff2") format("woff2"), url("../../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../../fonts/Roboto-Medium.woff2") format("woff2"), url("../../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif; }
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#root {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.container {
+  max-width: 724px;
+  margin: 0 auto;
+  padding: 20px 0; }
+
+#root {
+  overflow: hidden; }
+
+.title-section {
+  text-align: center;
+  -webkit-box-shadow: 0 4px 3px -2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 3px -2px rgba(0, 0, 0, 0.3); }
+
+.nav-bar {
+  text-decoration: none;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 20px;
+  border-bottom: 1px solid grey; }
+
+.nav-bar > li:hover {
+  cursor: pointer; }
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-bottom: 1px solid black; }
+
+p {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  text-indent: 3px; }
+
+.accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white; }
+
+.item {
+  -ms-flex-preferred-size: 33%;
+  flex-basis: 33%;
+  background-color: #000; }

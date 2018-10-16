@@ -1,0 +1,45 @@
+@import 'utilities/colors';
+@import 'utilities/stylesheet';
+
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+#root {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.container {
+	max-width: 724px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+#root {
+  overflow: hidden;
+}
+
+.title-section {
+	text-align: center;
+  box-shadow: 0 4px 3px -2px rgba(0,0,0,0.3);
+}
+
+footer {
+	
+}
+
+@import '../parts/nav-bar';
+@import '../parts/about';
+@import '../parts/accordion';
