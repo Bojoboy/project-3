@@ -42,12 +42,9 @@ html, body {
   justify-content: space-between; }
 
 .container {
-  max-width: 724px;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 20px 0; }
-
-#root {
-  overflow: hidden; }
 
 .title-section {
   text-align: center;
@@ -65,8 +62,24 @@ html, body {
   padding: 20px;
   border-bottom: 1px solid grey; }
 
-.nav-bar > li:hover {
+li:hover {
   cursor: pointer; }
+
+ul li::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  -webkit-transition: width .5s;
+  -o-transition: width .5s;
+  transition: width .5s; }
+
+li:hover::after {
+  width: 100%;
+  -webkit-transition: width .3s;
+  -o-transition: width .3s;
+  transition: width .3s; }
 
 .about {
   display: -webkit-box;
@@ -76,7 +89,7 @@ html, body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  border-bottom: 1px solid black; }
+  border-bottom: 1px solid grey; }
 
 p {
   -webkit-box-pack: center;
@@ -86,13 +99,56 @@ p {
   align-self: center;
   text-indent: 3px; }
 
-.accordion {
+.slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: white; }
+  color: white;
+  height: 400px;
+  padding: 20px 0; }
+
+.item:nth-child(1) {
+  border-left: none; }
 
 .item {
-  -ms-flex-preferred-size: 33%;
-  flex-basis: 33%;
-  background-color: #000; }
+  background-size: cover;
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  border-left: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 0.5;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+  .item:hover {
+    -webkit-box-shadow: 0 4px 3px -2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 3px -2px rgba(0, 0, 0, 0.3);
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    opacity: 1;
+    cursor: pointer;
+    border-left: 0px; }
+
+.item-1 {
+  background-image: url(../images/shirt-1.jpg); }
+
+.item-2 {
+  background-image: url(../images/shirt-2.jpg); }
+
+.item-3 {
+  background-image: url(../images/shirt-3.jpg); }
+
+.item-4 {
+  background-image: url(../images/pants.jpg); }
+
+footer {
+  padding: 20px;
+  text-align: center; }
