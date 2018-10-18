@@ -5,6 +5,10 @@ html, body {
 	height: 100%;
 	padding: 0;
 	margin: 0;
+}
+
+body {
+	padding-top: 70px;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -24,16 +28,11 @@ html, body {
 .container {
 	max-width: 1024px;
 	margin: 0 auto;
-	padding: 20px 0;
 }
 
-
-.title-section {
-	text-align: center;
-  box-shadow: 0 4px 3px -2px rgba(0,0,0,0.3);
-}
-
-@import '../parts/nav-bar';
-@import '../parts/about';
-@import '../parts/slider';
-@import '../parts/footer';
+@import './parts/header';
+@import './sections/nav-bar';
+@import './sections/title-section';
+@import './sections/about';
+@import './sections/slider';
+@import './sections/footer';

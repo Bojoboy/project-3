@@ -19,7 +19,10 @@
 html, body {
   height: 100%;
   padding: 0;
-  margin: 0;
+  margin: 0; }
+
+body {
+  padding-top: 70px;
   font-family: 'Roboto', sans-serif; }
 
 *,
@@ -43,15 +46,35 @@ html, body {
 
 .container {
   max-width: 1024px;
-  margin: 0 auto;
-  padding: 20px 0; }
+  margin: 0 auto; }
 
-.title-section {
-  text-align: center;
-  -webkit-box-shadow: 0 4px 3px -2px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 4px 3px -2px rgba(0, 0, 0, 0.3); }
+header {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #4381B5; }
+
+.logo {
+  float: left;
+  height: 70px;
+  width: 70px;
+  margin-left: 20px; }
+
+#menu-icon {
+  display: hidden;
+  width: 40px;
+  height: 40px;
+  background-color: #4C8FEC; }
+
+a:hover#menu-icon {
+  background-color: #444;
+  border-radius: 4px; }
 
 .nav-bar {
+  height: 70px;
+  color: #fff;
   text-decoration: none;
   list-style: none;
   display: -webkit-box;
@@ -59,27 +82,31 @@ html, body {
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  padding: 20px;
-  border-bottom: 1px solid grey; }
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0; }
+
+li {
+  -webkit-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  transition: color .3s ease; }
 
 li:hover {
-  cursor: pointer; }
+  cursor: pointer;
+  color: #2e597d;
+  -webkit-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  transition: color .3s ease; }
 
-ul li::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #000;
-  -webkit-transition: width .5s;
-  -o-transition: width .5s;
-  transition: width .5s; }
-
-li:hover::after {
-  width: 100%;
-  -webkit-transition: width .3s;
-  -o-transition: width .3s;
-  transition: width .3s; }
+.title-section {
+  height: 100px;
+  color: #fff;
+  background-color: #528ebf;
+  padding: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0 4px 3px -2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 3px -2px rgba(0, 0, 0, 0.3); }
 
 .about {
   display: -webkit-box;
@@ -90,14 +117,6 @@ li:hover::after {
   -ms-flex-direction: column;
   flex-direction: column;
   border-bottom: 1px solid grey; }
-
-p {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  text-indent: 3px; }
 
 .slider {
   display: -webkit-box;
@@ -138,7 +157,8 @@ p {
     border-left: 0px; }
 
 .item-1 {
-  background-image: url(../images/shirt-1.jpg); }
+  background-image: url(../images/shirt-1.jpg);
+  background-size: cover; }
 
 .item-2 {
   background-image: url(../images/shirt-2.jpg); }

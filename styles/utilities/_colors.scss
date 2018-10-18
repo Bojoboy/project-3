@@ -1,2 +1,7 @@
-$red: rgb(150,0,0);
-$green: rgb(0,150,0);
+$colors: (
+	background: (
+		main: #4381B5,
+		dark: darken(#4381B5, 15%),
+		light: lighten(#4381B5, 5%)
+	)
+);
