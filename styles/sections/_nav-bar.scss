@@ -19,17 +19,3 @@ li:hover {
 	transition: color .3s ease;
 }
 
-// ul li::after {
-// 	content: '';
-// 	display: block;
-// 	width: 0;
-// 	height: 2px;
-// 	background-color: map-get(map-get($colors, background), dark);
-// 	transition: width .5s;
-// }
-
-// li:hover::after {
-// 	width: 100%;
-// 	transition: width .3s;
-// }
-
